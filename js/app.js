@@ -3,11 +3,11 @@ $(function(){
         event.preventDefault();
         $("#rulet").toggleClass("go");  
 
-        $("#btn , #btn1 , #btn2").attr('disabled', true);
+//         $("#btn , #btn1 , #btn2").attr('disabled', true);
 
-        setTimeout(function() {
-            $("#btn , #btn1 , #btn2").attr('disabled', false);
-        }, 17000);
+//         setTimeout(function() {
+//             $("#btn , #btn1 , #btn2").attr('disabled', false);
+//         }, 17000);
         
        
         function getRandomInt(min, max) {
