@@ -4,43 +4,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>casino</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/cart.png">
+
 </head>
 <body>
+    
     <header>
-        <button class="nav_burger" id="nav_burger" type="button">
+        <div class="" id="active">
+            <div class="header_links">
+                <a href="#" class="header_link">Авториозваться</a>
+                <a href="#" class="header_link">Баланс</a>
+                <a href="#" class="header_link">Помощь</a>
+                <a href="#" class="header_link">F.Q</a>
+            </div>
+        </div>
+        <button class="nav_burger " id="nav_burger" type="button">
             <span class="nav_burger_item"></span>
         </button>
         <h1 class="logo">casino</h1>
     </header>
+    <div class="alert lose none">Lose</div>
+    <div class="alert win none">Win</div>
+    <p class="inner_text">100</p>
 
-    <p class="inner_text">Испытай удачу</p>
     <div class="rulletka">
-        <img class="rulet" id="rulet" src="img/rullet.png" alt="">
-        <div class="elipse"></div>
-        <!-- <div class="ride"></div> -->
-        
+        <img class="rulet" id="rulet" src="img/rullet.png" alt=""></img>
+        <div class="elipse">Розыгрыш</div>
+        <div  class="progress close">
+            <span class="progress-left">
+                <span class="progress-bar"></span>
+            </span>
+            <span class="progress-right">
+                <span class="progress-bar"></span>
+            </span>
+            <div id="timer" class="progress-value">5</div>
+        </div>         
     </div>
 
     <form  method="post" action="" class="incresed">
         <label for="enter"></label>
-            <input type="number" class="input" id="enter" onkeyup="checkParams()" placeholder="Ваша ставка"  >  
+            <input type="number" class="input" id="enter" onkeyup="checkParams()" placeholder="Ваша ставка">  
         </label>
         <div class="knop">
-            <button  class="btn red" id="btn" type="button" disabled><p>x2</p></button>
-            <button  class="btn green" id="btn1" type="button" disabled><p>x14</p></button>
-            <button  class="btn black" id="btn2" type="button" disabled><p>x2</p></button>
+            <button  class="btn red_btn" id="btn" type="button" disabled>x2</button>
+            <button  class="btn green_btn" id="btn1" type="button" disabled>x14</button>
+            <button  class="btn black_btn" id="btn2" type="button" disabled>x2</button>
         </div>
     </form>
 
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/app.js"></script>
-    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
 </body>
 </html>
